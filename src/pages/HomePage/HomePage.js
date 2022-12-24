@@ -93,7 +93,7 @@ function HomePage() {
           <div className="text-center  overflow-hidden p-[20px 0px 100px 20px] h-full w-2/4">
             <div className=" m-auto mt-10  grid mb:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-1 gap-6 animate__animated animate__fadeInUp">
               {/* <SkeletonItem /> */}
-              <TabsHeader renderRoomItem={renderRoomItem} />
+              {/* <TabsHeader renderRoomItem={renderRoomItem} /> */}
               {/* {renderRoomItem()} */}
             </div>
           </div>
