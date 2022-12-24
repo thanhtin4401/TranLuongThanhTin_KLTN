@@ -35,13 +35,13 @@ export default function Header() {
   window.addEventListener('scroll', closeNav);
 
   const renderOption = () => {
-    return allLocation.map((item, index) => {
-      return (
-        <Option key={index} value={item.id}>
-          {item.tenViTri}
-        </Option>
-      );
-    });
+    // return allLocation.map((item, index) => {
+    //   return (
+    //     <Option key={index} value={item.id}>
+    //       {item.tenViTri}
+    //     </Option>
+    //   );
+    // });
   };
   const searchBtn = () => {
     if (idViTri !== 0) {
