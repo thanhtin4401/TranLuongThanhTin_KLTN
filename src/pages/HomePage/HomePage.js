@@ -49,18 +49,11 @@ function HomePage() {
   useEffect(() => {
     setNewRoom(allRoom);
   }, [allRoom]);
-  // const renderRoomItem = () => {
-  //   let room = newRoom?.map((item, index) => {
-  //     return { ...item, data: dataIMG[index] };
-  //   });
-  //   return room?.slice(0, 15).map((roomInfor, index) => {
-  //     return <CardItem key={index} roomInfor={roomInfor} />;
-  //   });
-  // };
+
   const renderRoomItem = () => {
-    return allHotle?.map((item, index) => {
-      return <CardItem key={index} roomInfor={item} />;
-    });
+    // return allHotle?.map((item, index) => {
+    //   return <CardItem key={index} roomInfor={item} />;
+    // });
   };
 
   const closeNav = () => {
