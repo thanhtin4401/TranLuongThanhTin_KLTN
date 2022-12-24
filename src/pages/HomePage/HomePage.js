@@ -58,7 +58,7 @@ function HomePage() {
   //   });
   // };
   const renderRoomItem = () => {
-    return allHotle.map((item, index) => {
+    return allHotle?.map((item, index) => {
       return <CardItem key={index} roomInfor={item} />;
     });
   };
@@ -212,7 +212,7 @@ function HomePage() {
       </div>
 
       <div className="container mb-10 m-auto mt-10 grid mb:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3 gap-6 ">
-        {isfetching ? <SkeletonItem /> : renderRoomItem()}
+        {allHotle ? renderRoomItem() : <SkeletonItem />}
       </div>
       <div className="mb:w-full sm:w-full lg:container mx-auto">
         <Banner />
